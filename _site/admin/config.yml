@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "_site/assets/images"
+public_folder: "/assets/images"
+collections:
+  - name: "about"
+    label: "About"
+    folder: "src/about-94-ft-player-deployment.md"
+    create: true
+    fields:
+      - { label: "Heading", name: "heading", widget: "string" }
+      - { label: "Background Image", name: "backgroundImage", widget: "image" }
+      - { label: "History Heading", name: "HistoryHeading", widget: "string" }
+      - { label: "Span Text", name: "SpanText", widget: "string" }
+      - { label: "History", name: "history", widget: "markdown" }
+      - { label: "Owner Image", name: "OwnerImage", widget: "image" }
+      - {
+          label: "Owner Bio 1",
+          name: "OwnerBioparagraphOne",
+          widget: "markdown",
+        }
+      - {
+          label: "Owner Bio 2",
+          name: "OwnerBioparagraphTwo",
+          widget: "markdown",
+        }
