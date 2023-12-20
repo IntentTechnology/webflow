@@ -1,13 +1,6 @@
-# dependencies installed by npm
+
 node_modules
-
-# build artefacts
 _site
-css
 
-# secrets and errors
-.env
-.log
-
-# macOS related files
-.DS_Store
+# Local Netlify folder
+.netlify
