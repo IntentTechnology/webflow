@@ -6,7 +6,7 @@ public_folder: "/assets/images"
 collections:
   - name: "about"
     label: "About"
-    folder: "src/about-94-ft-player-deployment.md"
+    folder: "src"
     create: true
     fields:
       - { label: "Heading", name: "heading", widget: "string" }
