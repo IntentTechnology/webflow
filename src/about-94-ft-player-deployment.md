@@ -1,5 +1,5 @@
----n
-layout: "/layouts/about.njk"
+---
+layout: "layouts/about.njk"
 heading: New about
 backgroundImage: /assets/images/IMG_1517-2.JPG
 HistoryHeading: "Opened in 2021,"
