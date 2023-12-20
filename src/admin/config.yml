@@ -7,7 +7,7 @@ collections:
   - name: "about"
     label: "About"
     folder: "src"
-    create: true
+    create: false
     fields:
       - { label: "Heading", name: "heading", widget: "string" }
       - { label: "Background Image", name: "backgroundImage", widget: "image" }
