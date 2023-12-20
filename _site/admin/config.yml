@@ -4,10 +4,12 @@ backend:
 media_folder: "_site/assets/images"
 public_folder: "/assets/images"
 collections:
-  - name: "about"
-    label: "About"
-    folder: "src"
-    create: false
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "About"
+        name: "about"
+        file: "src/about-94-ft-player-deployment.html"
     fields:
       - { label: "Heading", name: "heading", widget: "string" }
       - { label: "Background Image", name: "backgroundImage", widget: "image" }
