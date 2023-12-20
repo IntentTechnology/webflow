@@ -1,5 +1,5 @@
 ---
-heading: 'Know more '
+heading: About us
 backgroundImage: /assets/images/IMG_1517-2.JPG
 HistoryHeading: 'Opened in 2021,'
 SpanText: Join us today!
