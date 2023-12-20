@@ -9,9 +9,3 @@ publish  = "_site"
   from = "/*"
   to = "/index.html"
   status = 200
-
-# Settings to preserve layout
-[[plugins]]
-  package = "netlify-plugin-replace"
-  [plugins.inputs]
-    patterns = ["---", "layout:"]
