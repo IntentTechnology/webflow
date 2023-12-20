@@ -3,3 +3,15 @@
 command = "npx eleventy"
 functions = "functions"
 publish  = "_site"
+
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Settings to preserve layout
+[[plugins]]
+  package = "netlify-plugin-replace"
+  [plugins.inputs]
+    patterns = ["---", "layout:"]
