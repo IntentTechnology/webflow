@@ -1,7 +1,7 @@
 ---
 layout: layouts/about.njk
 
-heading: A about pagessss
+heading: A about
 backgroundImage: /assets/images/B.-Ellis-p-500.jpg
 HistoryHeading: "Opened in 2021,"
 SpanText: Join us today!
@@ -37,3 +37,13 @@ OwnerBioparagraphTwo: >-
   training style combined with her ability to inspire has not only proven
   results but impactful to the basketball community.
 ---
+
+Upon finishing college, Amber joined the grassroots program she grew up in
+Austin Elite where she was in charge of player development and coached the 17u
+boys team. She completed 2 summer seasons and transitioned to college
+coaching, coaching University of Louisiana for 6 years. While in charge of the
+guard development she had, 3 all conference selections.Amber has worked with
+numerous youth and youth programs, high school, collegiate and professional
+players from all over the country.Amber’s high energy and enthusiastic
+training style combined with her ability to inspire has not only proven
+results but impactful to the basketball community.
