@@ -1,7 +1,8 @@
 ---
-heading: ' Intent'
+layout: "base.njk"
+heading: A about Intent
 backgroundImage: /assets/images/B.-Ellis-p-500.jpg
-HistoryHeading: 'Opened in 2021,'
+HistoryHeading: "Opened in 2021,"
 SpanText: Join us today!
 history: >-
   94FT Player Development strives to impact the basketball culture of Lafayette
@@ -36,3 +37,4 @@ OwnerBioparagraphTwo: >-
   results but impactful to the basketball community.
 ---
 
+{% include 'about.html' %}
