@@ -1,11 +1,6 @@
 
 [build]
-command = "npx 11ty/eleventy"
-functions = "functions"
+command = "npm run build"
 publish  = "_site"
 
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
