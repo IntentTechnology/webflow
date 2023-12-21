@@ -7,6 +7,10 @@
     "start": "eleventy --serve",
     "build": "eleventy"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IntentTechnology/webflow"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
