@@ -23,9 +23,13 @@ collections:
               widget: "string",
             }
           - { label: "Span Text", name: "SpanText", widget: "string" }
-          # - { label: "History", name: "history", widget: "markdown" }
+          - { label: "History", name: "history", widget: "markdown" }
           - { label: "Owner Image", name: "OwnerImage", widget: "image" }
-          - { label: "body", name: "OwnerBioparagraphOne", widget: "markdown" }
+          - {
+              label: "Owner Bio 1",
+              name: "OwnerBioparagraphOne",
+              widget: "markdown",
+            }
           - {
               label: "Owner Bio 2",
               name: "OwnerBioparagraphTwo",

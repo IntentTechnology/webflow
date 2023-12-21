@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy"
+    "clean": "rm -rf _site",
+    "dev:11ty": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --serve --watch",
+    "dev": "npm-run-all clean --parallel dev:*",
+    "build:postcss": "postcss src/assets/styles/*.css --dir _site/assets/styles/",
+    "build:11ty": "cross-env ELEVENTY_ENV=production npx @11ty/eleventy",
+    "build": "npm-run-all clean --parallel build:*"
   },
   "repository": {
     "type": "git",
@@ -15,6 +19,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "cross-env": "^7.0.3",
+    "npm-run-all": "^4.1.5"
   }
 }
