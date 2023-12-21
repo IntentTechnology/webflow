@@ -38,6 +38,7 @@ OwnerBioparagraphTwo: >-
   results but impactful to the basketball community.
 ---
 
+<<<<<<< HEAD:src/about-94-ft-player-deployment.md
 Upon finishing college, Amber joined the grassroots program she grew up in
 Austin Elite where she was in charge of player development and coached the 17u
 boys team. She completed 2 summer seasons and transitioned to college
@@ -47,3 +48,6 @@ numerous youth and youth programs, high school, collegiate and professional
 players from all over the country.Amber’s high energy and enthusiastic
 training style combined with her ability to inspire has not only proven
 results but impactful to the basketball community.
+=======
+
+> > > > > > > e0764ee44fbfbc95da34eccb5e1b584ef3d822ea:src/about-94-ft-player-deployment.html
