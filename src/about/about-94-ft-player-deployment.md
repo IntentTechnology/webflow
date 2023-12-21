@@ -1,7 +1,7 @@
 ---
-heading: " About "
+heading: ' About  Us'
 backgroundImage: /assets/images/B.-Ellis-p-500.jpg
-HistoryHeading: "Opened in 2021,"
+HistoryHeading: 'Opened in 2021,'
 SpanText: Join us today!
 history: >-
   94FT Player Development strives to impact the basketball culture of Lafayette
@@ -36,6 +36,3 @@ OwnerBioparagraphTwo: >-
   results but impactful to the basketball community.
 ---
 
-# <<<<<<< HEAD:src/about/about-94-ft-player-deployment.md
-
-> > > > > > > d9f0a43806519918e035651256fe617d74d8f0d5:src/about-94-ft-player-deployment.md
