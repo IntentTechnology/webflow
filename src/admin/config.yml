@@ -9,7 +9,7 @@ collections:
     files:
       - label: "About"
         name: "about"
-        file: "src/about-94-ft-player-deployment.njk"
+        file: "src/about-94-ft-player-deployment.md"
         fields:
           - { label: "Heading", name: "heading", widget: "string" }
           - {
