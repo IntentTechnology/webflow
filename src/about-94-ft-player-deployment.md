@@ -1,7 +1,7 @@
 ---
-layout: layouts/about.njk
+layout: "about.njk"
 
-heading: A about
+heading: A about Intent
 backgroundImage: /assets/images/B.-Ellis-p-500.jpg
 HistoryHeading: "Opened in 2021,"
 SpanText: Join us today!
