@@ -1,5 +1,4 @@
 ---
-layout: "base.njk"
 heading: " About "
 backgroundImage: /assets/images/B.-Ellis-p-500.jpg
 HistoryHeading: "Opened in 2021,"
@@ -36,5 +35,3 @@ OwnerBioparagraphTwo: >-
   training style combined with her ability to inspire has not only proven
   results but impactful to the basketball community.
 ---
-
-{% include "about.html" %}
