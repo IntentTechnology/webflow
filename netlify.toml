@@ -1,8 +1,8 @@
 
 [build]
-command = "npm run build"
-publish  = "build/"
-base = "_site/"
+command = "npx eleventy"
+functions = "functions"
+publish  = "_site"
 
 
 [[redirects]]
