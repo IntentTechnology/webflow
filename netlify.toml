@@ -1,6 +1,6 @@
 
 [build]
-command = "npx eleventy"
+command = "npm run build"
 publish  = "build/"
 base = "_site/"
 
