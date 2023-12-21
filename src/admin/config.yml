@@ -13,7 +13,7 @@ collections:
         fields:
           - { label: "Heading", name: "heading", widget: "string" }
           - {
-              label: "Background Image",
+              label: "Backgrounds Image",
               name: "backgroundImage",
               widget: "image",
             }
