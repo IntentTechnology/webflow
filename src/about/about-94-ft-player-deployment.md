@@ -35,3 +35,7 @@ OwnerBioparagraphTwo: >-
   training style combined with her ability to inspire has not only proven
   results but impactful to the basketball community.
 ---
+
+# <<<<<<< HEAD:src/about/about-94-ft-player-deployment.md
+
+> > > > > > > d9f0a43806519918e035651256fe617d74d8f0d5:src/about-94-ft-player-deployment.md
