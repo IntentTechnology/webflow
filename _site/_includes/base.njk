@@ -7,6 +7,7 @@
   <head>
     <meta charset="utf-8" />
     <title>94 FT Player Development</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <meta
       content="https://uploads-ssl.webflow.com/654a70d3a2ffa47d33ce7603/65693a6f2e2a6cee3ac3b342_Tre%20Wesley.jpg"
       property="og:image"
@@ -114,45 +115,38 @@
             <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
               <ul role="list" class="nav-menu w-list-unstyled">
                 <li>
-                  <a
-                    href="index.html"
-                    aria-current="page"
-                    class="nav-link-2 w--current"
+                  <a href="/" aria-current="page" class="nav-link-2 w--current"
                     >Home</a
                   >
                 </li>
                 <li>
-                  <a
-                    href="about-94-ft-player-deployment.html"
-                    class="nav-link-2"
+                  <a href="/about-94-ft-player-deployment" class="nav-link-2"
                     >About</a
                   >
                 </li>
                 <li>
                   <a
-                    href="ways-to-train-94-ft-player-deployment.html"
+                    href="/ways-to-train-94-ft-player-deployment"
                     class="nav-link-2"
                     >Train 94FT</a
                   >
                 </li>
                 <li>
                   <a
-                    href="camps-clinics-94-ft-player-deployment.html"
+                    href="/camps-clinics-94-ft-player-deployment"
                     class="nav-link-2"
                     >Camps &amp; Clinics</a
                   >
                 </li>
                 <li>
-                  <a
-                    href="contact-94-ft-player-deployment.html"
-                    class="nav-link-2"
+                  <a href="/contact-94-ft-player-deployment" class="nav-link-2"
                     >Contact</a
                   >
                 </li>
                 <li class="mobile-margin-top-11">
                   <div class="nav-button-wrapper">
                     <a
-                      href="book-with-94-ft-player-deployment.html"
+                      href="/book-with-94-ft-player-deployment"
                       class="button-primary-2 w-button"
                       >Book Our Court</a
                     >
@@ -178,6 +172,9 @@
         class="navbar-logo-center-container shadow-three w-nav"
       ></div>
     </div>
+    {% block content %}
+    {{ content | safe }}
+    {% endblock content %}
     <div class="footer">
       <div class="columns-6">
         <div class="small-columns">
@@ -311,6 +308,17 @@
         </div>
       </div>
     </div>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
     <script
       src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=654a70d3a2ffa47d33ce7603"
       type="text/javascript"
