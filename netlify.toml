@@ -2,7 +2,7 @@
 [build]
 command = "npx eleventy"
 functions = "functions"
-publish  = "_site"
+publish  = "build"
 
 
 [[redirects]]
