@@ -1,8 +1,7 @@
 ---
-layout: "about.njk"
-heading: "About Us people "
+heading: About
 backgroundImage: /assets/images/B.-Ellis-p-500.jpg
-HistoryHeading: "Opened in 2021,"
+HistoryHeading: 'Opened in 2021,'
 SpanText: Join us today!
 history: >-
   94FT Player Development strives to impact the basketball culture of Lafayette
@@ -35,4 +34,6 @@ OwnerBioparagraphTwo: >-
   players from all over the country.Amber’s high energy and enthusiastic
   training style combined with her ability to inspire has not only proven
   results but impactful to the basketball community.
+layout: about.njk
 ---
+
