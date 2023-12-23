@@ -1,6 +1,6 @@
 ---
 heading: About
-backgroundImage: /assets/images/B.-Ellis-p-500.jpg
+backgroundImage: /assets/images/IMG_1536-p-500.jpg
 HistoryHeading: 'Opened in 2021,'
 SpanText: Join us today!
 history: >-
