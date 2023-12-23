@@ -1,8 +1,10 @@
 backend:
   name: git-gateway
   branch: main
+
 media_folder: "_site/assets/images"
 public_folder: "/assets/images"
+
 collections:
   - name: "pages"
     label: "Pages"
@@ -13,7 +15,7 @@ collections:
         fields:
           - { label: "Heading", name: "heading", widget: "string" }
           - {
-              label: "Backgrounds Image",
+              label: "Background Image",
               name: "backgroundImage",
               widget: "image",
             }
@@ -34,4 +36,10 @@ collections:
               label: "Owner Bio 2",
               name: "OwnerBioparagraphTwo",
               widget: "markdown",
+            }
+          - {
+              name: "layout",
+              label: "Layout",
+              widget: "hidden",
+              default: "about.njk",
             }
