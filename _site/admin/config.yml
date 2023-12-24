@@ -9,7 +9,52 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - label: "About"
+      - label: "HomePage"
+        name: "home"
+        file: "src/index.md"
+        fields:
+          - {
+              name: "layout",
+              label: "Layout",
+              widget: "hidden",
+              default: "homepage.njk",
+            }
+          - {
+              name: "hero",
+              label: "Hero",
+              widget: "object",
+              fields:
+                [
+                  { label: "Background Image", name: "bg", widget: "image" },
+                  {
+                    label: "First Title Paragraph",
+                    name: "firstTitlepara",
+                    widget: "string",
+                  },
+                  {
+                    label: "Second Title Paragraph",
+                    name: "secondTitlepara",
+                    widget: "string",
+                  },
+                  { label: "Paragraph", name: "Para", widget: "string" },
+                ],
+            }
+          - {
+              name: "OurMission",
+              label: "Our Mission",
+              widget: "object",
+              fields:
+                [
+                  { label: "Heading", name: "heading", widget: "string" },
+                  { label: "Paragraph", name: "paragraph", widget: "markdown" },
+                  {
+                    label: "Mission Image",
+                    name: "missionimage",
+                    widget: "image",
+                  },
+                ],
+            }
+      - label: "About Page"
         name: "about"
         file: "src/about-94-ft-player-deployment.md"
         fields:
