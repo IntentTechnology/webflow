@@ -4,7 +4,7 @@ hero:
   Para: >-
     A premier skill development facility with a basketball training system
     designed to produce the complete athlete for players at every level.
-  bg: /assets/images/IMG_4493-p-800.jpg
+  bg: /assets/images/Tre-Wesley-p-2000.jpg
   firstTitlepara: BASKET BALL
   secondTitlepara: DEVELOPMENT
 OurMission:
