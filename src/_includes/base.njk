@@ -6,7 +6,7 @@
 >
   <head>
     <meta charset="utf-8" />
-    <title>94 FT Player Development</title>
+    <title>94 FT Player Development | {{ title }}</title>
     <script
       defer
       src="https://identity.netlify.com/v1/netlify-identity-widget.js"
@@ -175,7 +175,9 @@
         class="navbar-logo-center-container shadow-three w-nav"
       ></div>
     </div>
+    {% block content %}
     {{ content | safe }}
+    {% endblock content %}
     <div class="footer">
       <div class="columns-6">
         <div class="small-columns">
