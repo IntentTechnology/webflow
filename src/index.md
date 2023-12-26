@@ -1,7 +1,7 @@
 ---
 layout: homepage.njk
 metatags:
-title: "Home"
+title: Home
 hero:
   Para: >-
     A premier skill development facility with a basketball training system
