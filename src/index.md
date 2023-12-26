@@ -15,5 +15,4 @@ OurMission:
     We use the game of basketball to teach and develop athletes through premier
     skill development training with a passion to make a difference in the
     Louisiana basketball community.
-services:
 ---
