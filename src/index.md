@@ -5,7 +5,7 @@ hero:
     A premier skill development facility with a basketball training system
     designed to produce the complete athlete for players at every level.
   bg: /assets/images/Tre-Wesley-p-2000.jpg
-  firstTitlepara: BASKET BALL
+  firstTitlepara: ' PREMIER PLAYER'
   secondTitlepara: DEVELOPMENT
 OurMission:
   heading: Athletes of all ages
