@@ -1,7 +1,6 @@
----
-layout: "base.njk"
-title: "{{ title }}"
----
+{% extends "base.njk" %} {% block contentmeta %}
+<title>94 FT Player Development | {{ title }}</title>
+{% endblock contentmeta %} {% block content %}
 
 <div
   class="hero-no-image"
@@ -509,3 +508,4 @@ title: "{{ title }}"
     ></div>
   </div>
 </section>
+{% endblock content %}

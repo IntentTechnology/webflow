@@ -6,8 +6,11 @@
 >
   <head>
     <meta charset="utf-8" />
-
-    <title>94 FT Player Development | {{ title }}</title>
+    {% block contentmeta %}
+    {{
+      content | safe
+    }}
+    {% endblock contentmeta %}
 
     <script
       defer
