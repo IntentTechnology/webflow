@@ -6,9 +6,11 @@
 >
   <head>
     <meta charset="utf-8" />
-    {% block contentmeta %}
-    <Title>{{ content | safe }}</Title>
-    {% endblock contentmeta %}
+    <title>
+      {% block contentmeta %}
+      {{ content | safe }}
+      {% endblock contentmeta %}
+    </title>
 
     <script
       defer
