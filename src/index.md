@@ -1,6 +1,6 @@
 ---
 layout: homepage.njk
-title: Home
+title: Homepage
 hero:
   Para: >-
     A premier skill development facility with a basketball training system
