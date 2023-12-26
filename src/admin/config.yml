@@ -6,6 +6,15 @@ media_folder: "_site/assets/images"
 public_folder: "/assets/images"
 
 collections:
+  - name: "services"
+    label: "Homepage Services"
+    folder: "src/services"
+    create: true
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: description, label: Description, widget: text }
+      - { name: img, label: Image, widget: image }
+
   - name: "pages"
     label: "Pages"
     files:
@@ -55,14 +64,6 @@ collections:
                   },
                 ],
             }
-          - name: "services"
-            label: "Services"
-            folder: "src/services"
-            create: true,
-            fields:
-              - { name: "title", label: "Title", widget: "string" }
-              - { name: description, label: Description, widget: text }
-              - { name: img, label: Image, widget: image }
 
       - label: "About Page"
         name: "about"
