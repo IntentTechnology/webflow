@@ -1,0 +1,24 @@
+{
+  "achievements": [
+    {
+      "title": "QUALIFIED COACHES",
+      "description": "Our club has a team of qualified basketball coaches that take care of your success.",
+      "image": "/assets/images/Vectors-Wrapper_1.svg"
+    },
+    {
+      "title": "TEAMWORK",
+      "description": "Teamwork is one of the main principles that we pursue at 94FT",
+      "image": "/assets/images/Vectors-Wrapper_2.svg"
+    },
+    {
+      "title": "PRIVATE/SMALL GROUP TRAINING",
+      "description": "Work on your weakness individually or in a small group, focusing on what a player needs to improve on. 1 on 1 or groups 2 to 6 players.",
+      "image": "/assets/images/Vectors-Wrapper_3.svg"
+    },
+    {
+      "title": "TRAINING CLASSES",
+      "description": "Improve your game in one of our group training classes, focusing on shooting and finishing, ball handling, footwork and much more!",
+      "image": "/assets/images/Vectors-Wrapper_4.svg"
+    }
+  ]
+}
