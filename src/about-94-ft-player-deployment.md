@@ -1,7 +1,6 @@
 ---
 heading: About
-metatags:
-title: "About"
+title: About
 backgroundImage: /assets/images/IMG_1536-p-500.jpg
 HistoryHeading: "Opened in 2021,"
 SpanText: Join us today!

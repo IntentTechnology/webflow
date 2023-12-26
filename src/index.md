@@ -1,6 +1,5 @@
 ---
 layout: homepage.njk
-metatags:
 title: Home
 hero:
   Para: >-

@@ -19,19 +19,14 @@ collections:
               widget: "hidden",
               default: "homepage.njk",
             }
-          - {
-              name: "metatags",
-              label: "Meta Tags",
-              widget: "object",
-              fields:
-                [{ label: "Meta Title", name: "title", widget: "string" }],
-            }
+
           - {
               name: "hero",
               label: "Hero",
               widget: "object",
               fields:
                 [
+                  { label: "Meta Title", name: "title", widget: "string" },
                   { label: "Background Image", name: "bg", widget: "image" },
                   {
                     label: "First Title Paragraph",
@@ -66,13 +61,7 @@ collections:
         file: "src/about-94-ft-player-deployment.md"
 
         fields:
-          - {
-              name: "metatags",
-              label: "Meta Tags",
-              widget: "object",
-              fields:
-                [{ label: "Meta Title", name: "title", widget: "string" }],
-            }
+          - { label: "Meta Title", name: "title", widget: "string" }
           - { label: "Heading", name: "heading", widget: "string" }
           - {
               label: "Background Image",
