@@ -1,7 +1,10 @@
 :root {
   --black: #121212;
 }
-
+.grid-contain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .w-layout-blockcontainer {
   max-width: 940px;
   margin-left: auto;
@@ -4596,6 +4599,9 @@ html.w-mod-js [data-ix="new-interaction-2"] {
 @media screen and (max-width: 991px) {
   #w-node-bd89bda5-cb85-598c-f8d6-92630cebf649-7eb390c6 {
     grid-area: span 1 / span 2 / span 1 / span 2;
+  }
+  .grid-contain {
+    grid-template-columns: 1fr;
   }
 }
 

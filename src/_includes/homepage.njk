@@ -67,95 +67,27 @@
     </div>
   </div>
 </div>
+
 <section class="section-2">
   <div class="w-layout-blockcontainer container-4 w-container">
-    <div
-      id="w-node-_5b43a393-b91b-10fa-f179-b6277d109d99-7d109d97"
-      class="w-layout-layout ouick-stack-mobile wf-layout-layout"
-    >
-      <div
-        id="w-node-_5b43a393-b91b-10fa-f179-b6277d109d9a-7d109d97"
-        class="w-layout-cell cell-2"
-      >
-        <div class="metric">
-          <img
-            src="/assets/images/Vectors-Wrapper_1.svg"
-            loading="lazy"
-            width="70"
-            height="70"
-            alt=""
-            class="vectors-wrapper-2"
-          />
-          <div class="headings-heading-3">QUALIFIED COACHES</div>
-          <div class="body-body---normal-2">
-            Our club has a team of qualified basketball coaches that take care
-            of your success.
-          </div>
+    <div class="grid-contain">
+      {%- for services in collections.services -%}
+
+      <div class="metric">
+        <img
+          src="{{ services.data.img }}"
+          loading="lazy"
+          width="70"
+          height="70"
+          alt=""
+          class="vectors-wrapper-2"
+        />
+        <div class="headings-heading-3">{{ services.data.title }}</div>
+        <div class="body-body---normal-2">
+          {{ services.data.description }}
         </div>
       </div>
-      <div
-        id="w-node-_5b43a393-b91b-10fa-f179-b6277d109da1-7d109d97"
-        class="w-layout-cell cell"
-      >
-        <div class="metric-2">
-          <img
-            src="/assets/images/Vectors-Wrapper_2.svg"
-            loading="lazy"
-            width="70"
-            height="70"
-            alt=""
-            class="vectors-wrapper-2"
-          />
-          <div class="headings-heading-3">TEAMWORK</div>
-          <div class="body-body---normal-2">
-            Teamwork is one of the main principles that we pursue at 94FT
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      id="w-node-_5b43a393-b91b-10fa-f179-b6277d109da8-7d109d97"
-      class="w-layout-layout quick-stack-mobile-2 wf-layout-layout"
-    >
-      <div
-        id="w-node-_5b43a393-b91b-10fa-f179-b6277d109da9-7d109d97"
-        class="w-layout-cell"
-      >
-        <div class="metric">
-          <img
-            src="/assets/images/Vectors-Wrapper_3.svg"
-            loading="lazy"
-            width="118.54839324951172"
-            height="70"
-            alt=""
-            class="vectors-wrapper-3"
-          />
-          <div class="headings-heading-3">PRIVATE/SMALL GROUP TRAINING</div>
-          <div class="body-body---normal-2">
-            Work on your weakness individually or in a small group, focusing on
-            what a player needs to improve on. 1 on 1 or groups 2 to 6 players.
-          </div>
-        </div>
-      </div>
-      <div
-        id="w-node-_5b43a393-b91b-10fa-f179-b6277d109db0-7d109d97"
-        class="w-layout-cell"
-      >
-        <div class="metric-2">
-          <img
-            src="/assets/images/Vectors-Wrapper_4.svg"
-            loading="lazy"
-            width="70"
-            height="70"
-            alt=""
-            class="vectors-wrapper-2"
-          />
-          <div class="headings-heading-3">TRAINING CLASSES<br />‍</div>
-          <div class="body-body---normal-2">
-            Improve your game in one of our group training classes, focusing on
-            shooting and finishing, ball handling, footwork and much more!
-          </div>
-        </div>
+        {%- endfor -%}
       </div>
     </div>
   </div>
