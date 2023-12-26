@@ -19,14 +19,13 @@ collections:
               widget: "hidden",
               default: "homepage.njk",
             }
-
+          - { label: "Meta Title", name: "title", widget: "string" }
           - {
               name: "hero",
               label: "Hero",
               widget: "object",
               fields:
                 [
-                  { label: "Meta Title", name: "title", widget: "string" },
                   { label: "Background Image", name: "bg", widget: "image" },
                   {
                     label: "First Title Paragraph",
