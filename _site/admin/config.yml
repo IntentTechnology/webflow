@@ -85,7 +85,7 @@ collections:
           - {
               name: "featuresUnitAmenities",
               label: "Features Unit Amenities",
-              widget: "list",
+              widget: "object",
               fields:
                 [
                   { label: "List 1", name: "list1", widget: "string" },
