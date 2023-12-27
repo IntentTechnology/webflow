@@ -35,5 +35,5 @@ OwnerBioparagraphTwo: >-
   players from all over the country.Amber’s high energy and enthusiastic
   training style combined with her ability to inspire has not only proven
   results but impactful to the basketball community.
-layout: about.njk
+layout: layouts/about.njk
 ---

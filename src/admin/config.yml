@@ -26,7 +26,7 @@ collections:
               name: "layout",
               label: "Layout",
               widget: "hidden",
-              default: "homepage.njk",
+              default: "layouts/homepage.njk",
             }
           - { label: "Meta Title", name: "title", widget: "string" }
           - {
@@ -64,7 +64,58 @@ collections:
                   },
                 ],
             }
-
+      - label: "Bookwith Page"
+        name: "bookwith"
+        file: "src/book-with-94-ft-player-deployment.md"
+        fields:
+          - {
+              name: "layout",
+              label: "Layout",
+              widget: "hidden",
+              default: "layouts/bookwith.njk",
+            }
+          - { label: "Meta Title", name: "title", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - {
+              label: "Background Image",
+              name: "backgroundimg",
+              widget: "image",
+            }
+          - { label: "Description", name: "description", widget: "markdown" }
+          - {
+              name: "featuresUnitAmenities",
+              label: "Features Unit Amenities",
+              widget: "list",
+              fields:
+                [
+                  { label: "List 1", name: "list1", widget: "string" },
+                  { label: "List 2", name: "list2", widget: "string" },
+                  { label: "List 3", name: "list3", widget: "string" },
+                  { label: "List 4", name: "list4", widget: "string" },
+                  { label: "List 5", name: "list5", widget: "string" },
+                  { label: "List 6", name: "list6", widget: "string" },
+                  { label: "List 7", name: "list7", widget: "string" },
+                  { label: "List 8", name: "list8", widget: "string" },
+                  { label: "List 9", name: "list9", widget: "string" },
+                  { label: "List 10", name: "list10", widget: "string" },
+                  { label: "List 11", name: "list11", widget: "string" },
+                  { label: "List 12", name: "list12", widget: "string" },
+                ],
+            }
+          - {
+              name: "additionalInformation",
+              label: "Additional Information",
+              widget: "list",
+              fields:
+                [
+                  { label: "Rental Fee", name: "rentalfee", widget: "string" },
+                  {
+                    label: "Security Deposit",
+                    name: "securitydepo",
+                    widget: "string",
+                  },
+                ],
+            }
       - label: "About Page"
         name: "about"
         file: "src/about-94-ft-player-deployment.md"
@@ -99,5 +150,5 @@ collections:
               name: "layout",
               label: "Layout",
               widget: "hidden",
-              default: "about.njk",
+              default: "layouts/about.njk",
             }

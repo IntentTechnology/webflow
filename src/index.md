@@ -1,5 +1,5 @@
 ---
-layout: homepage.njk
+layout: layouts/homepage.njk
 title: Home
 hero:
   Para: >-
