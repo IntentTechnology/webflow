@@ -1,27 +1,13 @@
----
-layout: "base.njk"
----
-
+{% extends "base.njk" %} {% block contentmeta %} 94 FT Player Development |
+{{ title }}
+{% endblock contentmeta %} {% block content %}
 <div class="hero-no-image-3">
-  <div class="image-wrapper-6">
-    <img
-      src="/assets/images/jl-191.jpg"
-      loading="lazy"
-      width="1440"
-      height="363"
-      alt=""
-      srcset="
-        /assets/images/jl-191-p-500.jpg   500w,
-        /assets/images/jl-191-p-800.jpg   800w,
-        /assets/images/jl-191-p-1080.jpg 1080w,
-        /assets/images/jl-191-p-1600.jpg 1600w,
-        /assets/images/jl-191.jpg        2000w
-      "
-      sizes="100vw"
-      class="image-7"
-    />
+  <div
+    class="image-wrapper-6"
+    style="background-image: url('{{ backgroundimg }}');"
+  >
     <div class="content-15">
-      <div class="headings-hero-6">Camps &amp; Clinics</div>
+      <div class="headings-hero-6">{{ heading }}</div>
     </div>
   </div>
 </div>
@@ -362,3 +348,4 @@ layout: "base.njk"
     </div>
   </section>
 </div>
+{% endblock content %}

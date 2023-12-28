@@ -6,17 +6,14 @@ media_folder: "_site/assets/images"
 public_folder: "/assets/images"
 
 collections:
-  - name: "sections"
-    label: "Sections"
-    files:
-      - name: "services"
-        label: "Homepage Services"
-        folder: "src/services"
-        create: true
-        fields:
-          - { name: "title", label: "Title", widget: "string" }
-          - { name: description, label: Description, widget: text }
-          - { name: img, label: Image, widget: image }
+  - name: "services"
+    label: "Homepage Services"
+    folder: "src/services"
+    create: true
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: description, label: Description, widget: text }
+      - { name: img, label: Image, widget: image }
 
   - name: "pages"
     label: "Pages"
@@ -170,5 +167,39 @@ collections:
           - {
               label: "Background Image",
               name: "backgroundImage",
+              widget: "image",
+            }
+      - label: "Contact Page"
+        name: "contact"
+        file: "src/contact-94-ft-player-deployment.md"
+        fields:
+          - {
+              name: "layout",
+              label: "Layout",
+              widget: "hidden",
+              default: "layouts/contact.njk",
+            }
+          - { label: "Meta Title", name: "title", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - {
+              label: "Background Image",
+              name: "backgroundimg",
+              widget: "image",
+            }
+      - label: "Camps and Clinics Page"
+        name: "campsandclinics"
+        file: "src/camps-clinics-94-ft-player-deployment.md"
+        fields:
+          - {
+              name: "layout",
+              label: "Layout",
+              widget: "hidden",
+              default: "layouts/campsandclinics.njk",
+            }
+          - { label: "Meta Title", name: "title", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - {
+              label: "Background Image",
+              name: "backgroundimg",
               widget: "image",
             }

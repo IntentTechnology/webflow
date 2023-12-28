@@ -1,10 +1,12 @@
----
-layout: "base.njk"
----
-
-<div class="image-wrapper-contact-hero">
+{% extends "base.njk" %} {% block contentmeta %} 94 FT Player Development |
+{{ title }}
+{% endblock contentmeta %} {% block content %}
+<div
+  class="image-wrapper-contact-hero"
+  style="background-image: url('{{ backgroundimg }}');"
+>
   <div class="content-9">
-    <div class="headings-hero-4">WE WANT TO HEAR <br />FROM YOU!</div>
+    <div class="headings-hero-4">{{ heading }}</div>
   </div>
 </div>
 <section class="section"></section>
@@ -210,3 +212,4 @@ layout: "base.njk"
     </div>
   </div>
 </div>
+{% endblock content %}
