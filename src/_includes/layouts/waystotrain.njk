@@ -23,16 +23,18 @@
 </div>
 <div class="hero-heading-left-4">
   <div class="subscription-wrapperr">
-    <h1 class="heading">{{ subscription.title }}</h1>
+    <h1 class="heading">{{ subscriptiontitle }}</h1>
     <div class="columns-11">
-      {% for subscrip in subscription.Subscriptions %}
+      {% for subscriptions in collections.subscriptions %}
       <div class="column-21">
         <div class="intro">
           <div class="name">
             <div class="headings-heading-31">
-              {{ subscrip.subscriptionTitle }}
+              {{ subscriptions.data.title }}
             </div>
-            <div class="body-mini-body---normal-3">{{ subscrip.subbody }}</div>
+            <div class="body-mini-body---normal-3">
+              {{ subscriptions.data.subbody }}
+            </div>
           </div>
           <a
             href="https://app.acuityscheduling.com/schedule.php?owner=25630832"
@@ -44,7 +46,7 @@
         </div>
         <div class="separator-2"></div>
         <div class="features-2">
-          {% for lists in subscrip.subscriptionList %}
+          {% for lists in subscriptions.data.subscriptionList %}
           <div class="pricing-feature-2">
             <div class="icon">
               <div class="react-icons-md-mdoutlinecheck-2">
@@ -67,7 +69,7 @@
           </div>
           {% endfor %}
           <div class="body-mini-body---normal-6">
-            {{ subscrip.pricingNote }}
+            {{ subscriptions.data.pricingNote }}
           </div>
         </div>
       </div>
@@ -76,131 +78,32 @@
   </div>
 </div>
 <div class="drop-in-wrapperr">
-  <h1 class="heading">Drop-In</h1>
+  <h1 class="heading">{{ dropIntitle }}</h1>
   <div class="columns-9">
-    <div class="column-20">
-      <div class="intro-2">
-        <div class="name-2">
-          <div class="headings-heading-29">Middle School &amp; High School</div>
+    {% for drops in collections.drops %}
+    <div class="column-21">
+      <div class="intro">
+        <div class="name">
+          <div class="headings-heading-31">
+            {{ drops.data.title }}
+          </div>
+          <div class="body-mini-body---normal-3">
+            {{ drops.data.subbody }}
+          </div>
         </div>
         <a
           href="https://app.acuityscheduling.com/schedule.php?owner=25630832"
           target="_blank"
           class="button-8"
         >
-          <div class="button---normal-10">DROP-IN</div>
+          <div class="button---normal-11">Drop-In</div>
         </a>
       </div>
       <div class="separator-2"></div>
       <div class="features-2">
+        {% for lists in drops.data.subscriptionList %}
         <div class="pricing-feature-2">
-          <div class="react-icons-md-mdoutlinecheck-2">
-            <img
-              src="/assets/images/Vectors-Wrapper_29.svg"
-              loading="lazy"
-              width="11.031461715698242"
-              height="8.40999984741211"
-              alt=""
-              class="vectors-wrapper-21"
-            />
-          </div>
-          <div class="feature-item">
-            <div class="feature-item">
-              <span class="feature-item-5">$50 </span
-              ><span class="feature-item-6">Drop-In</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="column-20">
-      <div class="intro-2">
-        <div class="name-2">
-          <div class="headings-heading-29">Young Ballers Academy (K-4th)</div>
-        </div>
-        <a
-          href="https://app.acuityscheduling.com/schedule.php?owner=25630832"
-          target="_blank"
-          class="button-8"
-        >
-          <div class="button---normal-10">DROP-IN</div>
-        </a>
-      </div>
-      <div class="separator-2"></div>
-      <div class="features-2">
-        <div class="pricing-feature-2">
-          <div class="react-icons-md-mdoutlinecheck-2">
-            <img
-              src="/assets/images/Vectors-Wrapper_29.svg"
-              loading="lazy"
-              width="11.031461715698242"
-              height="8.40999984741211"
-              alt=""
-              class="vectors-wrapper-21"
-            />
-          </div>
-          <div class="feature-item">
-            <div class="feature-item">
-              <span class="feature-item-5">$40 </span
-              ><span class="feature-item-6">Drop-In</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="column-20">
-      <div class="intro-2">
-        <div class="name-2">
-          <div class="headings-heading-29">Private Training</div>
-        </div>
-        <a
-          href="https://app.acuityscheduling.com/schedule.php?owner=25630832"
-          target="_blank"
-          class="button-8"
-        >
-          <div class="button---normal-10">DROP-IN</div>
-        </a>
-      </div>
-      <div class="separator-2"></div>
-      <div class="features-2">
-        <div class="pricing-feature-2">
-          <div class="react-icons-md-mdoutlinecheck-2">
-            <img
-              src="/assets/images/Vectors-Wrapper_31.svg"
-              loading="lazy"
-              width="11.031461715698242"
-              height="8.40999984741211"
-              alt=""
-              class="vectors-wrapper-21"
-            />
-          </div>
-          <div class="feature-item">
-            <div class="feature-item">
-              <span class="feature-item-5">$100 </span
-              ><span class="feature-item-6">Drop-In</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="column-20">
-      <div class="intro-2">
-        <div class="name-2">
-          <div class="headings-heading-29">Small Group Training</div>
-          <div class="body-mini-body---normal-3">(2-6 participants)</div>
-        </div>
-        <a
-          href="https://app.acuityscheduling.com/schedule.php?owner=25630832"
-          target="_blank"
-          class="button-8"
-        >
-          <div class="button---normal-10">DROP-IN</div>
-        </a>
-      </div>
-      <div class="separator-2"></div>
-      <div class="features-2">
-        <div class="pricing-feature-2">
-          <div class="icon-2">
+          <div class="icon">
             <div class="react-icons-md-mdoutlinecheck-2">
               <img
                 src="/assets/images/Vectors-Wrapper_33.svg"
@@ -208,38 +111,24 @@
                 width="11.031461715698242"
                 height="8.40999984741211"
                 alt=""
-                class="vectors-wrapper-21"
+                class="vectors-wrapper-22"
               />
             </div>
           </div>
           <div class="feature-item">
             <div class="feature-item">
-              <span class="feature-item-5">$160 </span
-              ><span class="feature-item-6">4 classes a month | 1/Week</span>
+              <span class="feature-item-11">{{ lists.amount }}</span
+              ><span class="feature-item-9">{{ lists.duration }}</span>
             </div>
           </div>
         </div>
-        <div class="pricing-feature-2">
-          <div class="react-icons-md-mdoutlinecheck-2">
-            <img
-              src="/assets/images/Vectors-Wrapper_28.svg"
-              loading="lazy"
-              width="11.031461715698242"
-              height="8.40999984741211"
-              alt=""
-              class="vectors-wrapper-21"
-            />
-          </div>
-          <div class="feature-item-4">
-            <div class="feature-item-4">
-              <span class="feature-item-7">$280 </span
-              ><span class="feature-item-6">8 classes a month | 2/week</span>
-            </div>
-          </div>
+        {% endfor %}
+        <div class="body-mini-body---normal-6">
+          {{ drops.data.pricingNote }}
         </div>
-        <div class="body-mini-body---normal-5">*Pricing is per player</div>
       </div>
     </div>
+    {% endfor %}
   </div>
   <div class="w-layout-blockcontainer w-container"></div>
 </div>
@@ -249,6 +138,7 @@
     id="w-node-d29f7a1f-41b6-297d-231f-d692ced65a39-c0d9767b"
     class="w-layout-layout wf-layout-layout"
   >
+    {% for trainsfeatures in collections.trainsfeatures %}
     <div
       id="w-node-b2a2dd81-8c52-df55-1771-36eaee643137-c0d9767b"
       class="w-layout-cell"
@@ -262,84 +152,13 @@
           alt=""
           class="_94ft-1-1"
         />
-        <div class="headings-heading-30">Shooting Lab</div>
+        <div class="headings-heading-30">{{ trainsfeatures.data.title }}</div>
         <div class="body-body---normal-16">
-          Specialized lab for shooting techniques. This lab is dedicated
-          specifically to shooting. Learn the fundamentals of shooting
-          techniques and footwork. Focused on the art of shot making while
-          placing an emphasis on footwork and making shots out of triple threat,
-          off the dribble, catch and shoot options and free throws. This lab
-          will consist of a lot of reps
+          {{ trainsfeatures.data.body }}
         </div>
       </div>
     </div>
-    <div
-      id="w-node-_9f6fec1e-2ce9-40af-f9d7-7420832bc7d2-c0d9767b"
-      class="w-layout-cell"
-    >
-      <div class="metric-10">
-        <img
-          src="/assets/images/94FT-1-1.png"
-          loading="lazy"
-          width="50"
-          height="50"
-          alt=""
-          class="_94ft-1-1"
-        />
-        <div class="headings-heading-30">Skill Lab</div>
-        <div class="body-body---normal-16">
-          Detailed Skill Development. Focused on improving skill sets that
-          include, ball handling, decision making, passing, IQ and footwork. We
-          will focus pick and roll, scoring off the dribble and different
-          concepts and reads to build IQ.<br /><br /><br /><br />‍
-        </div>
-      </div>
-    </div>
-    <div
-      id="w-node-d54a1796-b3d3-1ff1-d407-ac908156f8ce-c0d9767b"
-      class="w-layout-cell"
-    >
-      <div class="metric-10">
-        <img
-          src="/assets/images/94FT-1-1.png"
-          loading="lazy"
-          width="50"
-          height="50"
-          alt=""
-          class="_94ft-1-1"
-        />
-        <div class="headings-heading-30">Open Runs</div>
-        <div class="body-body---normal-16">
-          Structured 3v3. Develop. Compete. Build IQ. Structured competitive
-          runs with detailed skill development. This program is designed to
-          improve IQ,     in game decision making and competitiveness. All open
-          runs will be played with FIBA rules.
-        </div>
-        <div class="body-body---normal-15"></div>
-      </div>
-    </div>
-    <div
-      id="w-node-e919023e-455f-e699-6296-74382484165d-c0d9767b"
-      class="w-layout-cell"
-    >
-      <div class="metric-10">
-        <img
-          src="/assets/images/94FT-1-1.png"
-          loading="lazy"
-          width="50"
-          height="50"
-          alt=""
-          class="_94ft-1-1"
-        />
-        <div class="headings-heading-30">Jr Skill Lab</div>
-        <div class="body-body---normal-16">
-          Master the fundamentals. Learn the foundation and fundamental concepts
-          of footwork, ball handling, passing, shooting and defense. This
-          program is designed specifically for young kids looking to learn and
-          explore the game while focusing on skill development.
-        </div>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </div>
 {% endblock content %}
