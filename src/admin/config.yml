@@ -6,15 +6,6 @@ media_folder: "_site/assets/images"
 public_folder: "/assets/images"
 
 collections:
-  - name: "services"
-    label: "Homepage Services"
-    folder: "src/services"
-    create: true
-    fields:
-      - { name: "title", label: "Title", widget: "string" }
-      - { name: description, label: Description, widget: text }
-      - { name: img, label: Image, widget: image }
-
   - name: "pages"
     label: "Pages"
     files:
@@ -152,3 +143,46 @@ collections:
               widget: "hidden",
               default: "layouts/about.njk",
             }
+      - label: "Ways to Train Page"
+        name: "waystotrain"
+        file: "src/ways-to-train-94-ft-player-deployment.md"
+        fields:
+          - {
+              name: "layout",
+              label: "Layout",
+              widget: "hidden",
+              default: "layouts/waystotrain.njk",
+            }
+          - { label: "Meta Title", name: "title", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - {
+              label: "Background Image",
+              name: "backgroundImage",
+              widget: "image",
+            }
+  - name: "sections"
+    label: "Sections"
+    files:
+      - name: "services"
+        label: "Homepage Services"
+        folder: "src/services"
+        create: true
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: description, label: Description, widget: text }
+          - { name: img, label: Image, widget: image }
+
+      - name: "subscriptions"
+        label: "Ways to Train Subscription Card"
+        file: "src/_data/subscription.json"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - {
+              name: "subscriptionTitle",
+              label: "Subscription Title",
+              widget: "string",
+            }
+          - { name: "subbody", label: "Sub Body", widget: "string" }
+          - { name: "amount", label: "Amount", widget: "string" }
+          - { name: "duration", label: "Duration", widget: "string" }
+          - { name: "pricingNote", label: "Pricing note", widget: "string" }

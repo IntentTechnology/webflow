@@ -1,25 +1,13 @@
----
-layout: "base.njk"
----
-
+{% extends "base.njk" %} {% block contentmeta %} 94 FT Player Development |
+{{ title }}
+{% endblock contentmeta %} {% block content %}
 <div class="hero-no-image-3">
-  <div class="image-wrapper-6">
-    <img
-      src="/assets/images/image0-6.jpeg"
-      loading="lazy"
-      width="1440"
-      height="363"
-      alt=""
-      srcset="
-        /assets/images/image0-6-p-500.jpeg  500w,
-        /assets/images/image0-6-p-800.jpeg  800w,
-        /assets/images/image0-6.jpeg       1024w
-      "
-      sizes="100vw"
-      class="image-7"
-    />
+  <div
+    class="image-wrapper-6"
+    style="background-image: url('{{ backgroundImage }}');"
+  >
     <div class="content-15">
-      <div class="headings-hero-6">Ways To Train</div>
+      <div class="headings-hero-6">{{ heading }}</div>
     </div>
   </div>
 </div>
@@ -35,14 +23,16 @@ layout: "base.njk"
 </div>
 <div class="hero-heading-left-4">
   <div class="subscription-wrapperr">
-    <h1 class="heading">Subscription</h1>
+    <h1 class="heading">{{ subscription.title }}</h1>
     <div class="columns-11">
-      <div class="column-22">
+      {% for subscrip in subscription.Subscriptions %}
+      <div class="column-21">
         <div class="intro">
           <div class="name">
             <div class="headings-heading-31">
-              Middle School &amp; High School
+              {{ subscrip.subscriptionTitle }}
             </div>
+            <div class="body-mini-body---normal-3">{{ subscrip.subbody }}</div>
           </div>
           <a
             href="https://app.acuityscheduling.com/schedule.php?owner=25630832"
@@ -54,187 +44,7 @@ layout: "base.njk"
         </div>
         <div class="separator-2"></div>
         <div class="features-2">
-          <div class="pricing-feature-2">
-            <div class="react-icons-md-mdoutlinecheck-2">
-              <img
-                src="/assets/images/Vectors-Wrapper_27.svg"
-                loading="lazy"
-                width="11.031461715698242"
-                height="8.40999984741211"
-                alt=""
-                class="vectors-wrapper-22"
-              />
-            </div>
-            <div class="feature-item">
-              <div class="feature-item feature-item">
-                <span class="feature-item-11">$140 </span
-                ><span class="feature-item-9">4 classes a month | 1/Week</span>
-              </div>
-            </div>
-          </div>
-          <div class="pricing-feature-2">
-            <div class="react-icons-md-mdoutlinecheck-2">
-              <img
-                src="/assets/images/Vectors-Wrapper_28.svg"
-                loading="lazy"
-                width="11.031461715698242"
-                height="8.40999984741211"
-                alt=""
-                class="vectors-wrapper-22"
-              />
-            </div>
-            <div class="feature-item-10">
-              <div class="feature-item-10 feature-item-10">
-                <span class="feature-item-8">$240 </span
-                ><span class="feature-item-9">8 classes a month | 2/week</span>
-              </div>
-            </div>
-          </div>
-          <div class="pricing-feature-2">
-            <div class="react-icons-md-mdoutlinecheck-2">
-              <img
-                src="/assets/images/Vectors-Wrapper_27.svg"
-                loading="lazy"
-                width="11.031461715698242"
-                height="8.40999984741211"
-                alt=""
-                class="vectors-wrapper-22"
-              />
-            </div>
-            <div class="feature-item">
-              <div class="feature-item">
-                <span class="feature-item-11">$300 </span
-                ><span class="feature-item-9">12 classes a month | 3/week</span>
-              </div>
-            </div>
-          </div>
-          <div class="pricing-feature-2">
-            <div class="feature-item"></div>
-          </div>
-        </div>
-      </div>
-      <div class="column-21">
-        <div class="intro">
-          <div class="name">
-            <div class="headings-heading-31">Young Ballers Academy (K-4th)</div>
-          </div>
-          <a
-            href="https://app.acuityscheduling.com/schedule.php?owner=25630832"
-            target="_blank"
-            class="button-8"
-          >
-            <div class="button---normal-11">SUBSCRIBE NOW</div>
-          </a>
-        </div>
-        <div class="separator-2"></div>
-        <div class="features-2">
-          <div class="pricing-feature-2">
-            <div class="react-icons-md-mdoutlinecheck-2">
-              <img
-                src="/assets/images/Vectors-Wrapper_29.svg"
-                loading="lazy"
-                width="11.031461715698242"
-                height="8.40999984741211"
-                alt=""
-                class="vectors-wrapper-22"
-              />
-            </div>
-            <div class="feature-item">
-              <div class="feature-item">
-                <span class="feature-item-11">$120 </span
-                ><span class="feature-item-9">4 classes a month | 1/Week</span>
-              </div>
-            </div>
-          </div>
-          <div class="pricing-feature-2">
-            <div class="react-icons-md-mdoutlinecheck-2">
-              <img
-                src="/assets/images/Vectors-Wrapper_30.svg"
-                loading="lazy"
-                width="11.031461715698242"
-                height="8.40999984741211"
-                alt=""
-                class="vectors-wrapper-22"
-              />
-            </div>
-            <div class="feature-item-10">
-              <div class="feature-item-10">
-                <span class="feature-item-8">$200 </span
-                ><span class="feature-item-9">8 classes a month | 2/week</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column-21">
-        <div class="intro">
-          <div class="name">
-            <div class="headings-heading-31">Private Training</div>
-          </div>
-          <a
-            href="https://app.acuityscheduling.com/schedule.php?owner=25630832"
-            target="_blank"
-            class="button-8"
-          >
-            <div class="button---normal-11">SUBSCRIBE NOW</div>
-          </a>
-        </div>
-        <div class="separator-2"></div>
-        <div class="features-2">
-          <div class="pricing-feature-2">
-            <div class="react-icons-md-mdoutlinecheck-2">
-              <img
-                src="/assets/images/Vectors-Wrapper_31.svg"
-                loading="lazy"
-                width="11.031461715698242"
-                height="8.40999984741211"
-                alt=""
-                class="vectors-wrapper-22"
-              />
-            </div>
-            <div class="feature-item">
-              <div class="feature-item">
-                <span class="feature-item-11">$350 </span
-                ><span class="feature-item-9">4 classes a month | 1/Week</span>
-              </div>
-            </div>
-          </div>
-          <div class="pricing-feature-2">
-            <div class="react-icons-md-mdoutlinecheck-2">
-              <img
-                src="/assets/images/Vectors-Wrapper_32.svg"
-                loading="lazy"
-                width="11.031461715698242"
-                height="8.40999984741211"
-                alt=""
-                class="vectors-wrapper-22"
-              />
-            </div>
-            <div class="feature-item-10">
-              <div class="feature-item-10">
-                <span class="feature-item-8">$650 </span
-                ><span class="feature-item-9">8 classes a month | 2/week</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column-21">
-        <div class="intro">
-          <div class="name">
-            <div class="headings-heading-31">Small Group Training</div>
-            <div class="body-mini-body---normal-3">(2-6 participants)</div>
-          </div>
-          <a
-            href="https://app.acuityscheduling.com/schedule.php?owner=25630832"
-            target="_blank"
-            class="button-8"
-          >
-            <div class="button---normal-11">SUBSCRIBE NOW</div>
-          </a>
-        </div>
-        <div class="separator-2"></div>
-        <div class="features-2">
+          {% for lists in subscrip.subscriptionList %}
           <div class="pricing-feature-2">
             <div class="icon">
               <div class="react-icons-md-mdoutlinecheck-2">
@@ -250,32 +60,18 @@ layout: "base.njk"
             </div>
             <div class="feature-item">
               <div class="feature-item">
-                <span class="feature-item-11">$160 </span
-                ><span class="feature-item-9">4 classes a month | 1/Week</span>
+                <span class="feature-item-11">{{ lists.amount }}</span
+                ><span class="feature-item-9">{{ lists.duration }}</span>
               </div>
             </div>
           </div>
-          <div class="pricing-feature-2">
-            <div class="react-icons-md-mdoutlinecheck-2">
-              <img
-                src="/assets/images/Vectors-Wrapper_28.svg"
-                loading="lazy"
-                width="11.031461715698242"
-                height="8.40999984741211"
-                alt=""
-                class="vectors-wrapper-22"
-              />
-            </div>
-            <div class="feature-item-10">
-              <div class="feature-item-10">
-                <span class="feature-item-8">$280 </span
-                ><span class="feature-item-9">8 classes a month | 2/week</span>
-              </div>
-            </div>
+          {% endfor %}
+          <div class="body-mini-body---normal-6">
+            {{ subscrip.pricingNote }}
           </div>
-          <div class="body-mini-body---normal-6">*Pricing is per player</div>
         </div>
       </div>
+      {% endfor %}
     </div>
   </div>
 </div>
@@ -546,3 +342,4 @@ layout: "base.njk"
     </div>
   </div>
 </div>
+{% endblock content %}
