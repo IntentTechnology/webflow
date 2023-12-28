@@ -11,7 +11,7 @@ collections:
     files:
       - label: "Subscription Data"
         name: "subscriptions"
-        file: "static/data/subscriptions.json"
+        file: "src/_data/subscription.json"
         fields:
           - { name: "title", label: "Title", widget: "string" }
           - {
