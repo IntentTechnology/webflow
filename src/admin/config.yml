@@ -30,13 +30,13 @@ collections:
           label: "Layout",
           widget: "hidden",
           default: "layouts/waystotrain.njk",
+          slug: "{{slug}}",
         }
       - { name: "title", label: "Title", widget: "string" }
       - { name: subbody, label: Sub Body, widget: text, required: false }
       - {
           name: "subscriptionList",
           label: "subscription List",
-          default: "layouts/waystotrain.njk",
           widget: "list",
           fields:
             [
