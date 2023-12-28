@@ -43,7 +43,12 @@ collections:
               { label: "Duration", name: "duration", widget: "string" },
             ],
         }
-      - { label: "Pricing Note", name: "pricingNote", widget: "string" }
+      - {
+          label: "Pricing Note",
+          name: "pricingNote",
+          widget: "string",
+          required: false,
+        }
 
   - name: "drop-in"
     label: "Ways to Train Drop In Cards"
@@ -68,7 +73,12 @@ collections:
               { label: "Duration", name: "duration", widget: "string" },
             ],
         }
-      - { label: "Pricing Note", name: "pricingNote", widget: "string" }
+      - {
+          label: "Pricing Note",
+          name: "pricingNote",
+          widget: "string",
+          required: false,
+        }
 
   - name: "waystotrainfeatures"
     label: "Ways to Train Features"
