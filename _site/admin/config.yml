@@ -8,28 +8,83 @@ public_folder: "/assets/images"
 collections:
   - name: "subscriptions"
     label: "Subscriptions"
-    folder: "src/_data/subscription.json"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { name: "title", label: "Title", widget: "string" }
-      - name: "Subscriptions"
-        label: "Subscription List"
-        widget: "list"
+    files:
+      - label: "Subscription Data"
+        name: "subscriptions"
+        file: "static/data/subscriptions.json"
         fields:
+          - { name: "title", label: "Title", widget: "string" }
           - {
-              name: "subscriptionTitle",
-              label: "Subscription Title",
-              widget: "string",
+              name: "Subscriptions",
+              label: "Subscription List",
+              widget: "list",
             }
-          - { name: "subbody", label: "Sub Body", widget: "string" }
-          - name: "subscriptionList"
-            label: "Subscription List"
-            widget: "list"
+          - label: "Middle School & High School"
+            name: "middleSchoolHighSchool"
+            widget: "object"
             fields:
-              - { name: "amount", label: "Amount", widget: "string" }
-              - { name: "duration", label: "Duration", widget: "string" }
+              - {
+                  name: "subscriptionTitle",
+                  label: "Subscription Title",
+                  widget: "string",
+                }
+              - { name: "subbody", label: "Sub Body", widget: "string" }
+              - name: "subscriptionList"
+                label: "Subscription List"
+                widget: "list"
+                fields:
+                  - { name: "amount", label: "Amount", widget: "string" }
+                  - { name: "duration", label: "Duration", widget: "string" }
+          - label: "Young Ballers Academy (K-4th)"
+            name: "youngBallersAcademy"
+            widget: "object"
+            fields:
+              - {
+                  name: "subscriptionTitle",
+                  label: "Subscription Title",
+                  widget: "string",
+                }
+              - { name: "subbody", label: "Sub Body", widget: "string" }
+              - name: "subscriptionList"
+                label: "Subscription List"
+                widget: "list"
+                fields:
+                  - { name: "amount", label: "Amount", widget: "string" }
+                  - { name: "duration", label: "Duration", widget: "string" }
+          - label: "Private Training"
+            name: "privateTraining"
+            widget: "object"
+            fields:
+              - {
+                  name: "subscriptionTitle",
+                  label: "Subscription Title",
+                  widget: "string",
+                }
+              - { name: "subbody", label: "Sub Body", widget: "string" }
+              - name: "subscriptionList"
+                label: "Subscription List"
+                widget: "list"
+                fields:
+                  - { name: "amount", label: "Amount", widget: "string" }
+                  - { name: "duration", label: "Duration", widget: "string" }
+          - label: "Small Group Training"
+            name: "smallGroupTraining"
+            widget: "object"
+            fields:
+              - {
+                  name: "subscriptionTitle",
+                  label: "Subscription Title",
+                  widget: "string",
+                }
+              - { name: "subbody", label: "Sub Body", widget: "string" }
               - { name: "pricingNote", label: "Pricing Note", widget: "string" }
+              - name: "subscriptionList"
+                label: "Subscription List"
+                widget: "list"
+                fields:
+                  - { name: "amount", label: "Amount", widget: "string" }
+                  - { name: "duration", label: "Duration", widget: "string" }
+
   - name: "services"
     label: "Homepage Services"
     folder: "src/services"
