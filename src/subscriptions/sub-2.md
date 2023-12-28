@@ -1,12 +1,13 @@
 ---
 layout: layouts/waystotrain.njk
 title: Young Ballers Academy (K-4th)
-subbody: ""
+subbody: ''
 subscriptionList:
-  - amount: $500
+  - amount: $1000
     duration: 4 classes a month | 1/Week
   - amount: $100
     duration: 8 classes a month | 2/week
-pricingNote: " "
-tags: "subscriptions"
+pricingNote: ' '
+tags: subscriptions
 ---
+
