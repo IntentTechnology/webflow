@@ -36,6 +36,7 @@ collections:
       - {
           name: "subscriptionList",
           label: "subscription List",
+          default: "layouts/waystotrain.njk",
           widget: "list",
           fields:
             [
