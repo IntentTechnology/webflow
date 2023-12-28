@@ -7,7 +7,7 @@ public_folder: "/assets/images"
 
 collections:
   - name: "sections"
-    label: "sections"
+    label: "Sections"
     files:
       - name: "services"
         label: "Homepage Services"
