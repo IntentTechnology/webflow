@@ -32,7 +32,7 @@ collections:
           default: "layouts/waystotrain.njk",
         }
       - { name: "title", label: "Title", widget: "string" }
-      - { name: subbody, label: Sub Body, widget: text }
+      - { name: subbody, label: Sub Body, widget: text, required: false }
       - {
           name: "subscriptionList",
           label: "subscription List",
@@ -57,7 +57,7 @@ collections:
           default: "layouts/waystotrain.njk",
         }
       - { name: "title", label: "Title", widget: "string" }
-      - { name: subbody, label: Sub Body, widget: text }
+      - { name: subbody, label: Sub Body, widget: text, required: false }
       - {
           name: "subscriptionList",
           label: "subscription List",
@@ -69,6 +69,7 @@ collections:
             ],
         }
       - { label: "Pricing Note", name: "pricingNote", widget: "string" }
+
   - name: "waystotrainfeatures"
     label: "Ways to Train Features"
     folder: "src/waystotrain-Features"
