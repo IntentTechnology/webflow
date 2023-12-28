@@ -19,6 +19,7 @@ collections:
       - { name: "title", label: "Title", widget: "string" }
       - { name: description, label: Description, widget: text }
       - { name: img, label: Image, widget: image }
+      - { label: "Tags", name: "tags", widget: "hidden", required: false }
 
   - name: "subscriptions"
     label: "Ways to Train Subscription Cards"
@@ -50,6 +51,7 @@ collections:
           widget: "string",
           required: false,
         }
+      - { label: "Tags", name: "tags", widget: "hidden", required: false }
 
   - name: "drop-in"
     label: "Ways to Train Drop In Cards"
@@ -80,6 +82,7 @@ collections:
           widget: "string",
           required: false,
         }
+      - { label: "Tags", name: "tags", widget: "hidden", required: false }
 
   - name: "waystotrainfeatures"
     label: "Ways to Train Features"
@@ -94,6 +97,7 @@ collections:
         }
       - { name: "title", label: "Title", widget: "string" }
       - { name: "body", label: Body, widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "hidden", required: false }
 
   - name: "pages"
     label: "Pages"
