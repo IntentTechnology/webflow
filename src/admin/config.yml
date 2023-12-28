@@ -8,7 +8,7 @@ public_folder: "/assets/images"
 collections:
   - name: "subscriptions"
     label: "Subscriptions"
-    folder: "src/_data"
+    folder: "src/_data/subscription.json"
     create: true
     slug: "{{slug}}"
     fields:
