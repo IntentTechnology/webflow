@@ -19,6 +19,7 @@ collections:
       - { name: "title", label: "Title", widget: "string" }
       - { name: description, label: Description, widget: text }
       - { name: img, label: Image, widget: image }
+
   - name: "subscriptions"
     label: "Ways to Train Subscription Cards"
     folder: "src/subscriptions"
@@ -35,7 +36,7 @@ collections:
       - {
           name: "subscriptionList",
           label: "subscription List",
-          widget: "object",
+          widget: "list",
           fields:
             [
               { label: "Amount", name: "amount", widget: "string" },
@@ -43,6 +44,7 @@ collections:
             ],
         }
       - { label: "Pricing Note", name: "pricingNote", widget: "string" }
+
   - name: "drop-in"
     label: "Ways to Train Drop In Cards"
     folder: "src/drop-in"
@@ -59,7 +61,7 @@ collections:
       - {
           name: "subscriptionList",
           label: "subscription List",
-          widget: "object",
+          widget: "list",
           fields:
             [
               { label: "Amount", name: "amount", widget: "string" },
@@ -79,7 +81,7 @@ collections:
           default: "layouts/waystotrain.njk",
         }
       - { name: "title", label: "Title", widget: "string" }
-      - { name: "body", label: Body, widget: text }
+      - { name: "body", label: Body, widget: "markdown" }
 
   - name: "pages"
     label: "Pages"
