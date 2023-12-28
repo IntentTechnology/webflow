@@ -5,7 +5,7 @@ subbody: ''
 subscriptionList:
   - amount: $100
     duration: 4 classes a month | 1/Week
-  - amount: $200
+  - amount: $100
     duration: 8 classes a month | 2/week
 pricingNote: ' '
 ---
