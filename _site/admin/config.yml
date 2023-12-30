@@ -79,7 +79,7 @@ collections:
       - { name: text, label: Rental Name, widget: "string" }
       - { label: "Tags", name: "tags", widget: "hidden", required: false }
 
-  - name: "trainers"
+  - name: "trainers-about"
     label: "Aboutpage-TRAINERS"
     folder: "src/trainers-about"
     create: true
@@ -93,7 +93,6 @@ collections:
       - { name: "trainername", label: "Trainer Name", widget: "string" }
       - { name: "trainerimg", label: Trainer Image, widget: image }
       - { name: "trainerPosition", label: Trainer Position, widget: string }
-      - { name: "trainerimg", label: Trainer Image, widget: image }
       - {
           name: TrainerBioparagraphOne,
           label: Trainer Bioparagraph 1,
