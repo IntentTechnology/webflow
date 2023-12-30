@@ -1,6 +1,6 @@
 ---
 layout: layouts/about.njk
-trainername: Brandon Ellis
+title: Brandon Ellis
 trainerimg: /assets/images/B.-Ellis.jpg
 trainerPosition: DIRECTOR OF HS DEVELOPMENT
 TrainerBioparagraphOne: >-
@@ -15,7 +15,6 @@ TrainerBioparagraphTwo: >-
   program as he graduated with a degree in communication studies. He then went
   on to coach to at his Alma Mater, Northside High School and lead the player
   development charge as he helped the program to back to back 20 win seasons.
-trainerInstagramLink: 'https://instagram.com/b.ellis0?igshid=YzAwZjE1ZTI0Zg=='
+trainerInstagramLink: "https://instagram.com/b.ellis0?igshid=YzAwZjE1ZTI0Zg=="
 tags: trainers
 ---
-

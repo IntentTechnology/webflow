@@ -84,8 +84,6 @@ collections:
     folder: "src/trainers-about"
     slug: "{{slug}}"
     create: true
-    format: "frontmatter"
-    identifier_field: trainername
     fields:
       - {
           name: "layout",
@@ -93,7 +91,7 @@ collections:
           widget: "hidden",
           default: "layouts/about.njk",
         }
-      - { name: "trainername", label: "Trainer Name", widget: "string" }
+      - { name: "title", label: "Trainer Name", widget: "string" }
       - { name: "trainerimg", label: Trainer Image, widget: image }
       - { name: "trainerPosition", label: Trainer Position, widget: string }
       - {
