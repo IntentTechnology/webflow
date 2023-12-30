@@ -8,7 +8,7 @@ TrainerBioparagraphOne: >-
   instagram. He has trained the likes of CashNasty, Kenny Chao,
   RyanTheCrashDummy and plethora of other influencers as well as high school,
   division 1, and pro talent. He has many viral training clips of him breaking
-  down specific moves and also providing training tips for hoopers in need.
+  down specific moves and also providing training tips for hoopers in need
 TrainerBioparagraphTwo: >-
   B Ellis was a 4 Time Conference Champion & National Runner up at the number 1
   NAIA Program in the Country, LSUA. He is 2nd all time in assists for the
