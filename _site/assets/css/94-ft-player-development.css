@@ -3338,10 +3338,10 @@
   margin-bottom: 60px;
   display: flex;
 }
-/* 
+
 .our-leadership-heading {
   margin-top: 40px;
-} */
+}
 
 .gallery-overview {
   background-color: #fff;
@@ -4525,9 +4525,9 @@ html.w-mod-js [data-ix="new-interaction-2"] {
     font-family: Kdam Thmor Pro, sans-serif;
   }
 
-  /* .our-leadership-heading {
+  .our-leadership-heading {
     margin-bottom: 0;
-  } */
+  }
 
   .container-12 {
     max-width: none;
@@ -4615,4 +4615,11 @@ html.w-mod-js [data-ix="new-interaction-2"] {
   #w-node-bd89bda5-cb85-598c-f8d6-92630cebf649-7eb390c6 {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }

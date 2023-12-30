@@ -32,8 +32,8 @@ collections:
           default: "layouts/homepage.njk",
         }
       - { name: "title", label: "Title", widget: "string" }
-      - { name: bodyText, label: Body, widget: "markdown" }
-      - { name: img, label: Image, widget: image }
+      - { name: "bodytext", label: Body, widget: "markdown" }
+      - { name: "img", label: Image, widget: image }
       - { name: "linktext", label: "Link Text", widget: "string" }
       - { label: "Tags", name: "tags", widget: "hidden", required: false }
 
@@ -48,7 +48,7 @@ collections:
           default: "layouts/homepage.njk",
         }
       - { name: "title", label: "Title", widget: "string" }
-      - { name: bodyText, label: Body, widget: "markdown" }
+      - { name: "bodytext", label: "Body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "hidden", required: false }
 
   - name: "testimonials"
@@ -78,6 +78,33 @@ collections:
       - { name: "img", label: "Images", widget: "image" }
       - { name: text, label: Rental Name, widget: "string" }
       - { label: "Tags", name: "tags", widget: "hidden", required: false }
+  - name: "trainers"
+    label: "Aboutpage-TRAINERS"
+    folder: "src/trainers-about"
+    create: true
+    fields:
+      - {
+          name: "layout",
+          label: "Layout",
+          widget: "hidden",
+          default: "layouts/about.njk",
+        }
+      - { name: "trainername", label: "Trainer Name", widget: "string" }
+      - { name: "trainerimg", label: Trainer Image, widget: image }
+      - { name: "trainerPosition", label: Trainer Position, widget: string }
+      - { name: "trainerimg", label: Trainer Image, widget: image }
+      - {
+          name: TrainerBioparagraphOne,
+          label: Trainer Bioparagraph 1,
+          widget: "markdown",
+        }
+      - {
+          name: TrainerBioparagraphTwo,
+          label: Trainer Bioparagraph 2,
+          widget: "markdown",
+        }
+      - { name: "trainerInstagramLink", label: Instagram Link, widget: string }
+      - { label: "Tags", name: "tags", widget: "list" }
 
   - name: "subscriptions"
     label: "Train94ftpage - Subscription Cards"
