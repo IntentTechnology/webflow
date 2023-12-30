@@ -84,6 +84,7 @@ collections:
     folder: "src/trainers-about"
     slug: "{{slug}}"
     create: true
+    format: "frontmatter"
     identifier_field: trainername
     fields:
       - {
