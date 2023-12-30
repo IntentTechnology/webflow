@@ -1,7 +1,7 @@
 ---
 layout: layouts/about.njk
 title: Jesutomi daniel
-trainerimg: /assets/images/jesutomi.jpg
+trainerimg: /assets/images/Image.png
 trainerPosition: striker
 TrainerBioparagraphOne: "CashNasty, Kenny Chao,\r\n  RyanTheCrashDummy and plethora of other influencers as well as high school,\r\n  division 1, and pro talent. He "
 TrainerBioparagraphTwo: "CashNasty, Kenny Chao,\r\n  RyanTheCrashDummy and plethora of other influencers as well as high school,\r\n  division 1, and pro talent. He "
