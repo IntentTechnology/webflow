@@ -78,6 +78,7 @@ collections:
       - { name: "img", label: "Images", widget: "image" }
       - { name: text, label: Rental Name, widget: "string" }
       - { label: "Tags", name: "tags", widget: "hidden", required: false }
+
   - name: "trainers"
     label: "Aboutpage-TRAINERS"
     folder: "src/trainers-about"
@@ -104,7 +105,7 @@ collections:
           widget: "markdown",
         }
       - { name: "trainerInstagramLink", label: Instagram Link, widget: string }
-      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Tags", name: "tags", widget: "select" }
 
   - name: "subscriptions"
     label: "Train94ftpage - Subscription Cards"
