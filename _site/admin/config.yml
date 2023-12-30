@@ -6,9 +6,16 @@ media_folder: "_site/assets/images"
 public_folder: "/assets/images"
 
 collections:
+  - name: "sections"
+    label: "Sections"
+    folder: "src/sections"
+    fields:
+      - name: "title"
+        label: "Title"
+        widget: "string"
   - name: "services"
     label: "Homepage Services"
-    folder: "src/services"
+    folder: "src/sections/services"
     fields:
       - {
           name: "layout",
@@ -23,7 +30,7 @@ collections:
 
   - name: "subscriptions"
     label: "Ways to Train Subscription Cards"
-    folder: "src/subscriptions"
+    folder: "src/sections/subscriptions"
 
     fields:
       - {
@@ -55,7 +62,7 @@ collections:
 
   - name: "drop-in"
     label: "Ways to Train Drop In Cards"
-    folder: "src/drop-in"
+    folder: "src/sections/drop-in"
 
     fields:
       - {
@@ -86,7 +93,7 @@ collections:
 
   - name: "waystotrainfeatures"
     label: "Ways to Train Features"
-    folder: "src/waystotrain-Features"
+    folder: "src/sections/waystotrain-Features"
 
     fields:
       - {
@@ -148,6 +155,40 @@ collections:
                   },
                 ],
             }
+          - {
+              name: "ways94thTrain",
+              label: "Ways to Train",
+              widget: "object",
+              fields: [{ label: "Title", name: "title", widget: "string" }],
+            }
+          - {
+              name: "trainwith94ft",
+              label: "Train with 94ft",
+              widget: "object",
+              fields:
+                [
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Button Text", name: "btnText", widget: "string" },
+                ],
+            }
+          - {
+              name: "testimonials",
+              label: "Testimonials",
+              widget: "object",
+              fields: [{ label: "Heading", name: "heading", widget: "string" }],
+            }
+          - {
+              name: "94ftcourtrental",
+              label: "94ft Court Rental",
+              widget: "object",
+              fields:
+                [
+                  { label: "Heading", name: "heading", widget: "string" },
+                  { label: "Paragraph", name: "textBody", widget: "text" },
+                  { label: "Button Text", name: "btnText", widget: "string" },
+                ],
+            }
+
       - label: "Bookwith Page"
         name: "bookwith"
         file: "src/book-with-94-ft-player-deployment.md"

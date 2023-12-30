@@ -15,4 +15,15 @@ OurMission:
     We use the game of basketball to teach and develop athletes through premier
     skill development training with a passion to make a difference in the
     Louisiana basketball community.
+ways94thTrain:
+  title: "WAYS 94ft TRAIN"
+trainwith94ft:
+  title: "TRAIN WITH 94FT"
+  btnText: "START TRAINING"
+testimonials:
+  heading: "TESTIMONIALS"
+94ftcourtrental:
+  heading: "94FT COURT RENTAL"
+  textBody: "Book us for your on court activities with 94ft!"
+  btnText: "BOOk NOW"
 ---
