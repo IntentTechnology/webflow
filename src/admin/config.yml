@@ -79,9 +79,10 @@ collections:
       - { name: text, label: Rental Name, widget: "string" }
       - { label: "Tags", name: "tags", widget: "hidden", required: false }
 
-  - name: "trainers-about"
+  - name: "trainername"
     label: "Aboutpage-TRAINERS"
     folder: "src/trainers-about"
+    slug: "{{slug}}"
     create: true
     fields:
       - {
