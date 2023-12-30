@@ -105,7 +105,7 @@ collections:
           widget: "markdown",
         }
       - { name: "trainerInstagramLink", label: Instagram Link, widget: string }
-      - { label: "Tags", name: "tags", widget: "list", default: ["trainers"] }
+      - { label: "Tags", name: "tags", widget: "select", options: ["trainers"] }
 
   - name: "subscriptions"
     label: "Train94ftpage - Subscription Cards"
