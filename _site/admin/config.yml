@@ -6,16 +6,9 @@ media_folder: "_site/assets/images"
 public_folder: "/assets/images"
 
 collections:
-  - name: "sections"
-    label: "Sections"
-    folder: "src/sections"
-    fields:
-      - name: "title"
-        label: "Title"
-        widget: "string"
   - name: "services"
-    label: "Homepage Services"
-    folder: "src/sections/services"
+    label: "homepage-SERVICES"
+    folder: "src/services"
     fields:
       - {
           name: "layout",
@@ -28,9 +21,67 @@ collections:
       - { name: img, label: Image, widget: image }
       - { label: "Tags", name: "tags", widget: "hidden", required: false }
 
+  - name: "waystotrain"
+    label: "Homepage-WAYS 94ft TRAIN"
+    folder: "src/home-page-ways94thtrain"
+    fields:
+      - {
+          name: "layout",
+          label: "Layout",
+          widget: "hidden",
+          default: "layouts/homepage.njk",
+        }
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: bodyText, label: Body, widget: "markdown" }
+      - { name: img, label: Image, widget: image }
+      - { name: "linktext", label: "Link Text", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "hidden", required: false }
+
+  - name: "trainwith94th"
+    label: "Homepage-TRAIN WITH 94FT"
+    folder: "src/homepage-waystotrain"
+    fields:
+      - {
+          name: "layout",
+          label: "Layout",
+          widget: "hidden",
+          default: "layouts/homepage.njk",
+        }
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: bodyText, label: Body, widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "hidden", required: false }
+
+  - name: "testimonials"
+    label: "Homepage-TESTIMONIALS"
+    folder: "src/testimonials"
+    fields:
+      - {
+          name: "layout",
+          label: "Layout",
+          widget: "hidden",
+          default: "layouts/homepage.njk",
+        }
+      - { name: "testimony", label: "Testimony", widget: "markdown" }
+      - { name: testifier, label: Testifier, widget: "string" }
+      - { label: "Tags", name: "tags", widget: "hidden", required: false }
+
+  - name: "courtrentallist"
+    label: "Homepage-94FT COURT RENTAL"
+    folder: "src/courtrentallist"
+    fields:
+      - {
+          name: "layout",
+          label: "Layout",
+          widget: "hidden",
+          default: "layouts/homepage.njk",
+        }
+      - { name: "img", label: "Images", widget: "image" }
+      - { name: text, label: Rental Name, widget: "string" }
+      - { label: "Tags", name: "tags", widget: "hidden", required: false }
+
   - name: "subscriptions"
-    label: "Ways to Train Subscription Cards"
-    folder: "src/sections/subscriptions"
+    label: "Train94ftpage - Subscription Cards"
+    folder: "src/subscriptions"
 
     fields:
       - {
@@ -61,8 +112,8 @@ collections:
       - { label: "Tags", name: "tags", widget: "hidden", required: false }
 
   - name: "drop-in"
-    label: "Ways to Train Drop In Cards"
-    folder: "src/sections/drop-in"
+    label: "Train94ftpage - Drop In Cards"
+    folder: "src/drop-in"
 
     fields:
       - {
@@ -92,8 +143,8 @@ collections:
       - { label: "Tags", name: "tags", widget: "hidden", required: false }
 
   - name: "waystotrainfeatures"
-    label: "Ways to Train Features"
-    folder: "src/sections/waystotrain-Features"
+    label: "Train94ftpage-Features"
+    folder: "src/waystotrain-Features"
 
     fields:
       - {
@@ -109,7 +160,7 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - label: "HomePage"
+      - label: "Home"
         name: "home"
         file: "src/index.md"
         fields:
@@ -189,7 +240,7 @@ collections:
                 ],
             }
 
-      - label: "Bookwith Page"
+      - label: "Book our Court "
         name: "bookwith"
         file: "src/book-with-94-ft-player-deployment.md"
         fields:
@@ -241,7 +292,7 @@ collections:
                   },
                 ],
             }
-      - label: "About Page"
+      - label: "About"
         name: "about"
         file: "src/about-94-ft-player-deployment.md"
 
@@ -277,7 +328,7 @@ collections:
               widget: "hidden",
               default: "layouts/about.njk",
             }
-      - label: "Ways to Train Page"
+      - label: "Train 94FT"
         name: "waystotrain"
         file: "src/ways-to-train-94-ft-player-deployment.md"
         fields:
@@ -294,7 +345,7 @@ collections:
               name: "backgroundImage",
               widget: "image",
             }
-      - label: "Contact Page"
+      - label: "Contact"
         name: "contact"
         file: "src/contact-94-ft-player-deployment.md"
         fields:
@@ -311,7 +362,7 @@ collections:
               name: "backgroundimg",
               widget: "image",
             }
-      - label: "Camps and Clinics Page"
+      - label: "Camps and Clinics"
         name: "campsandclinics"
         file: "src/camps-clinics-94-ft-player-deployment.md"
         fields:
