@@ -390,6 +390,75 @@ collections:
               name: "backgroundimg",
               widget: "image",
             }
+          - {
+              name: "followuslinks",
+              label: "Social Links",
+              widget: "object",
+              fields:
+                [
+                  {
+                    label: "Instagram Link",
+                    name: "instagramLink",
+                    widget: "string",
+                  },
+                  {
+                    label: "Twitter Link",
+                    name: "twitterLink",
+                    widget: "string",
+                  },
+                  {
+                    label: "Linkedin Link",
+                    name: "linkedinLink",
+                    widget: "string",
+                  },
+                  {
+                    label: "Facebook Link",
+                    name: "facebookLink",
+                    widget: "string",
+                  },
+                  { label: "Email Link", name: "emailLink", widget: "string" },
+                ],
+            }
+          - {
+              name: "emailsupport",
+              label: "Email support Card",
+              widget: "object",
+              fields:
+                [
+                  { label: "Image", name: "img", widget: "image" },
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Text", name: "text", widget: "string" },
+                  { label: "Email", name: "email", widget: "string" },
+                ],
+            }
+          - {
+              name: "callus",
+              label: "Call Us Card",
+              widget: "object",
+              fields:
+                [
+                  { label: "Image", name: "img", widget: "image" },
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Text", name: "text", widget: "string" },
+                  {
+                    label: "Phone Number",
+                    name: "phonenumber",
+                    widget: "string",
+                  },
+                ],
+            }
+          - {
+              name: "visitus",
+              label: "Visit Us Card",
+              widget: "object",
+              fields:
+                [
+                  { label: "Image", name: "img", widget: "image" },
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Text", name: "text", widget: "string" },
+                  { label: "Address", name: "address", widget: "string" },
+                ],
+            }
       - label: "Camps and Clinics"
         name: "campsandclinics"
         file: "src/camps-clinics-94-ft-player-deployment.md"
@@ -407,3 +476,18 @@ collections:
               name: "backgroundimg",
               widget: "image",
             }
+          - { label: "Notice Body", name: "noticebody", widget: "markdown" }
+          - { label: "Notice Title", name: "noticeTitle", widget: "string" }
+          - { label: "Notice Text", name: "noticeText", widget: "string" }
+          - {
+              label: "Sign up Button Link",
+              name: "signupbuttonLink",
+              widget: "string",
+            }
+          - { label: "Button Text", name: "btnText", widget: "string" }
+          - { label: "Image 1", name: "img1", widget: "image" }
+          - { label: "Image 2", name: "img2", widget: "image" }
+          - { label: "Image 3", name: "img3", widget: "image" }
+          - { label: "Image 4", name: "img4", widget: "image" }
+          - { label: "Image 5", name: "img5", widget: "image" }
+          - { label: "Image 6", name: "img6", widget: "image" }

@@ -104,9 +104,7 @@
         <div class="column-11">
           <div class="text-4">FOLLOW US ON</div>
           <div class="social-links">
-            <a
-              href="https://www.instagram.com/94ftbball/?hl=en"
-              class="w-inline-block"
+            <a href="{{ followuslinks.instagramLink }}" class="w-inline-block"
               ><img
                 src="/assets/images/Vectors-Wrapper_18.svg"
                 loading="lazy"
@@ -115,9 +113,7 @@
                 alt=""
                 class="vectors-wrapper-9"
             /></a>
-            <a
-              href="https://x.com/ayeeeegeeee?s=11&amp;t=Fne-q40w1T259ap3X2GGqw"
-              class="w-inline-block"
+            <a href="{{ followuslinks.twitterLink }}" class="w-inline-block"
               ><img
                 src="/assets/images/Vectors-Wrapper_19.svg"
                 loading="lazy"
@@ -126,9 +122,7 @@
                 alt=""
                 class="vectors-wrapper-9"
             /></a>
-            <a
-              href="https://www.linkedin.com/in/amber-gregg-02b87121b?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=ios_app"
-              class="w-inline-block"
+            <a href="{{ followuslinks.linkedinLink }}" class="w-inline-block"
               ><img
                 src="/assets/images/Vectors-Wrapper_20.svg"
                 loading="lazy"
@@ -137,9 +131,7 @@
                 alt=""
                 class="vectors-wrapper-9"
             /></a>
-            <a
-              href="https://www.facebook.com/94FTBBALL?mibextid=LQQJ4d"
-              class="w-inline-block"
+            <a href="{{ followuslinks.facebookLink }}" class="w-inline-block"
               ><img
                 src="/assets/images/Vectors-Wrapper_17.svg"
                 loading="lazy"
@@ -148,9 +140,7 @@
                 alt=""
                 class="vectors-wrapper-9"
             /></a>
-            <a
-              href="mailto:94ftbball@gmail.com?subject=Hello!"
-              class="w-inline-block"
+            <a href="{{ followuslinks.emailLink }}" class="w-inline-block"
               ><img
                 src="/assets/images/Vectors-Wrapper_16.svg"
                 loading="lazy"
@@ -169,45 +159,45 @@
   <div class="columns-7">
     <div class="metric-9">
       <img
-        src="/assets/images/Vectors-Wrapper_24.svg"
+        src="{{ emailsupport.img }}"
         loading="lazy"
         width="70"
         height="70"
         alt=""
         class="vectors-wrapper-13"
       />
-      <div class="headings-heading-24">EMAIL SUPPORT</div>
-      <div class="body-body---normal-12">Chat us up for help</div>
-      <div class="text-3">94ftbball@gmail.com</div>
+      <div class="headings-heading-24">{{ emailsupport.title }}</div>
+      <div class="body-body---normal-12">{{ emailsupport.text }}</div>
+      <div class="text-3">{{ emailsupport.email }}</div>
     </div>
     <div class="metric-9">
       <img
-        src="/assets/images/Vectors-Wrapper_25.svg"
+        src="{{ callus.img }}"
         loading="lazy"
         width="70"
         height="70"
         alt=""
         class="vectors-wrapper-13"
       />
-      <div class="headings-heading-24">CALL US</div>
-      <div class="body-body---normal-12">Monday — Friday from 10:00 - 8:00</div>
+      <div class="headings-heading-24">{{ callus.title }}</div>
+      <div class="body-body---normal-12">{{ callus.text }}</div>
       <div class="footer-links-5">
-        <div class="text-3">(337) 326-0833</div>
+        <div class="text-3">{{ callus.phonenumber }}</div>
       </div>
     </div>
     <div class="metric-9">
       <img
-        src="/assets/images/Vectors-Wrapper_26.svg"
+        src="{{ visitus.img }}"
         loading="lazy"
         width="70"
         height="70"
         alt=""
         class="vectors-wrapper-13"
       />
-      <div class="headings-heading-24">VISIT US</div>
-      <div class="body-body---normal-12">Visit our gym</div>
+      <div class="headings-heading-24">{{ visitus.title }}</div>
+      <div class="body-body---normal-12">{{ visitus.text }}</div>
       <div class="footer-links-6">
-        <div class="text-3">212 N Luke Street, Lafayette, LA 70506</div>
+        <div class="text-3">{{ visitus.address }}</div>
       </div>
     </div>
   </div>
